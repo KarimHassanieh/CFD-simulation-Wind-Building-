@@ -6,3 +6,4 @@
 ![results](results/velocity_3.png)
 ![results](results/velocity_4.png)
 ![results](results/velocity_5.png)
+![results](results/residuals.png)
