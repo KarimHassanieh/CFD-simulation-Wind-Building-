@@ -1,0 +1,73 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  dev
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : dev-a0be2ea16e88
+Exec   : surfaceFeatures
+Date   : Nov 12 2023
+Time   : 21:58:19
+Host   : "karimh89"
+PID    : 7684
+I/O    : uncollated
+Case   : /home/karim/Desktop/Projects/CFD/OpenFoam_Projects/buildings_wind
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading "surfaceFeaturesDict"
+
+Surface            : "buildings.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 1894
+Vertices     : 965
+Bounding Box : (5.16742 -63.4833 0) (201.182 58.0754 68)
+
+
+Constructing feature set from included angle 120
+Selecting edges purely based on geometric tests: no
+
+Initial feature set:
+    feature points : 176
+    feature edges  : 633
+    of which
+        region edges   : 30
+        external edges : 484
+        internal edges : 119
+
+
+Final feature set:
+points      : 541
+edges       : 633
+boundingBox : (5.16742 -63.4833 0) (201.182 58.0754 66.5)
+point classification :
+    convex feature points          :      114
+    concave feature points         :        0
+    mixed feature points           :       62
+    other (non-feature) points     :      365
+edge classification :
+    external (convex angle) edges  :      484
+    internal (concave angle) edges :      119
+    flat region edges              :        0
+    open edges                     :       12
+    multiply connected edges       :       18
+
+Writing extendedFeatureEdgeMesh to "constant/extendedFeatureEdgeMesh/buildings.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/karim/Desktop/Projects/CFD/OpenFoam_Projects/buildings_wind/constant/extendedFeatureEdgeMesh/buildings"
+
+Writing featureEdgeMesh to "constant/geometry/buildings.eMesh"
+
+ExecutionTime = 0.052598 s  ClockTime = 0 s
+
+End
+

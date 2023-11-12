@@ -1,0 +1,76 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  dev
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : dev-a0be2ea16e88
+Exec   : blockMesh
+Date   : Nov 12 2023
+Time   : 21:58:18
+Host   : "karimh89"
+PID    : 7682
+I/O    : uncollated
+Case   : /home/karim/Desktop/Projects/CFD/OpenFoam_Projects/buildings_wind
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Deleting polyMesh directory
+    "/home/karim/Desktop/Projects/CFD/OpenFoam_Projects/buildings_wind/constant/polyMesh"
+Reading "blockMeshDict"
+
+Creating block mesh from
+    "system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 25
+        j : 17.6471 .. 17.6471
+        k : 3.74635 .. 22.4781
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (-300 -300 0) (500 300 400)
+  nPoints: 45045
+  nCells: 41344
+  nFaces: 127628
+  nInternalFaces: 120436
+----------------
+Patches
+----------------
+  patch 0 (start: 120436 size: 1292) name: inlet
+  patch 1 (start: 121728 size: 1292) name: outlet
+  patch 2 (start: 123020 size: 1088) name: ground
+  patch 3 (start: 124108 size: 3520) name: frontAndBack
+
+End
+
